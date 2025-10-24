@@ -8,6 +8,9 @@ ps=PorterStemmer()
 nltk.download('stopwords')
 nltk.download('punkt')
 
+import nltk
+nltk.data.path.append("nltk_data")
+
 def data_preprocessing(text):
   text=text.lower()
   words=word_tokenize(text)
