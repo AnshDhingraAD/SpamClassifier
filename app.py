@@ -5,10 +5,8 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from nltk import word_tokenize
 ps=PorterStemmer()
-nltk.download('stopwords')
-nltk.download('punkt')
 
-import nltk
+
 nltk.data.path.append("nltk_data")
 
 def data_preprocessing(text):
